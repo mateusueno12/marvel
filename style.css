@@ -1,0 +1,32 @@
+/* Configuração geral do fundo da página */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Cor solicitada pelo professor */
+    background: linear-gradient(45deg, #d41e31, #491f8f); 
+}
+
+/* Container para limitar o tamanho e centralizar */
+.container-imagem {
+    overflow: hidden;
+    border-radius: 15px; /* Deixa as bordas arredondadas (opcional) */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+}
+
+/* Estado normal da imagem */
+.imagem-efeito {
+    display: block;
+    max-width: 400px; /* Ajuste o tamanho máximo como preferir */
+    height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease; /* Cria a animação suave */
+}
+
+/* Efeito quando o mouse passa por cima (Hover) */
+.imagem-efeito:hover {
+    transform: scale(1.08); /* Dá um leve zoom na imagem */
+    filter: brightness(1.2) drop-shadow(0 0 15px #ffcc00); /* Aumenta o brilho e dá um aspecto de "energia" dourada */
+}
